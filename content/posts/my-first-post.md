@@ -7,6 +7,7 @@ draft: false
 # Hello
 
 Test 
+## Create Hugo site
 
 https://gohugo.io/getting-started/quick-start/
 
@@ -23,10 +24,11 @@ hugo server
 hugo new posts/my-first-post.md
 ```
 
+## Setup Github pages
 
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-`github/workflows/gh-pages.yml`
+### Create `github/workflows/gh-pages.yml`
 ```
 name: github pages
 
@@ -49,7 +51,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          # extended: true
+          extended: true
 
       - name: Build
         run: hugo --minify
@@ -62,10 +64,14 @@ jobs:
           publish_dir: ./public
 ```
 
-```
-GitHub pages setting
+### Change `baseURL` in `config.toml`
 
-By default, the GitHub action pushes the generated content to the gh-pages branch. This means GitHub has to serve your gh-pages branch as a GitHub Pages branch. You can change this setting by going to Settings > GitHub Pages, and change the source branch to gh-pages.
-Change baseURL in config.toml
-Don’t forget to rename your baseURL in config.toml with the value https://<USERNAME>.github.io for your user repository or https://<USERNAME>.github.io/<REPOSITORY_NAME> for a project repository.
-```
+- For project repository `https://<USERNAME>.github.io/<REPOSITORY_NAME>`
+- For user repository `https://<USERNAME>.github.io`
+
+
+### Create `gh-pages` branch
+
+### Create Deploy Key
+
+https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key
