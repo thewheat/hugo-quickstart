@@ -72,6 +72,8 @@ jobs:
 
 ### Create `gh-pages` branch
 
-### Create Deploy Key
 
-https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key
+### Change action permission
+
+- Settings > Actions > General > Actions permissions
+- Set "Read and write permissions"
