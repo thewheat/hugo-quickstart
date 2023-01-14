@@ -41,6 +41,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -72,8 +74,14 @@ jobs:
 
 ### Create `gh-pages` branch
 
+### Ensure action permission
 
-### Change action permission
+- In `github/workflows/gh-pages.yml`
+```
+    permissions:
+      contents: write
+```
 
-- Settings > Actions > General > Actions permissions
-- Set "Read and write permissions"
+- Or alternatively via the web interface
+    - Settings > Actions > General > Actions permissions
+    - Set "Read and write permissions"
