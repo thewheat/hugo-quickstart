@@ -1,5 +1,6 @@
 # baseURL = 'http://example.org/'
-baseURL = 'https://thewheat.github.io/hugo-quickstart'
+#baseURL = 'https://thewheat.github.io/hugo-quickstart'
+baseURL = 'https://hugo.bruneigeekmeet.com'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'ananke'
