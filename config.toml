@@ -4,3 +4,6 @@ baseURL = 'https://hugo.bruneigeekmeet.com'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'ananke'
+
+[params]
+show_reading_time = true
