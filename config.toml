@@ -7,3 +7,15 @@ theme = 'ananke'
 
 [params]
 show_reading_time = true
+
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 1
+[[menu.main]]
+  identifier = 'contact'
+  name = 'Contact'
+  url = '/contact/'
+  weight = -120
