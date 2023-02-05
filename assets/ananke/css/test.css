@@ -1,0 +1,7 @@
+/* .athelas hard coded in h1 https://github.com/theNewDynamic/gohugo-theme-ananke/search?q=athelas 
+  alternatively override layouts in `layouts/_default` https://gohugo.io/templates/lookup-order/
+*/
+
+.athelas {
+    font-family: sans-serif;
+}

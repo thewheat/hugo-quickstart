@@ -6,7 +6,18 @@ title = 'My New Hugo Site'
 theme = 'ananke'
 
 [params]
+
+# theme specific customizations
+
+## https://github.com/theNewDynamic/gohugo-theme-ananke#show-reading-time-and-word-count
 show_reading_time = true
+
+## https://github.com/theNewDynamic/gohugo-theme-ananke#custom-css
+custom_css = ["test.css"]
+
+## https://github.com/theNewDynamic/gohugo-theme-ananke#update-font-or-body-classes
+body_classes = "sans-serif bg-near-white" # default value is "avenir bg-near-white" https://github.com/theNewDynamic/gohugo-theme-ananke/search?q=avenir
+post_content_classes = "sans-serif"       # default value is "serif"                https://github.com/theNewDynamic/gohugo-theme-ananke/search?q=post_content_classes
 
 [menu]
 [[menu.main]]
